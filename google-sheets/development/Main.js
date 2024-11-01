@@ -1,0 +1,7 @@
+function onOpen() {
+  const ui = SpreadsheetApp.getUi();
+  ui.createMenu(APPLICATION_NAME)
+    .addItem(APPLICATION_COMMAND_PANEL_NAME, SIDEBAR_RENDER_FUNCTION_NAME)
+    .addItem(MENU_ITEM_NAME_SET_AUTHENTICATION_KEY, SET_AUTHENTICATION_KEY_RENDER_FUNCTION_NAME)
+    .addToUi();
+}
