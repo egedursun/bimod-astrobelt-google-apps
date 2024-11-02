@@ -18,6 +18,7 @@ function replaceSelectedText(output) {
   });
   if (startElement && startOffset !== null) {
     startElement.insertText(startOffset, output);
+    // insertMarkdownAtCursorWithOffset(startOffset, output)
   } else {
     DocumentApp.getUi().alert(APPLICATION_PROCESS_ERROR_NO_VALID_INSERTION_POINT);
   }
